@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/reset.css"> 
+    <link rel = "stylesheet" href = "css/style.css">
+    <link rel = "stylesheet" href = "https://fonts.googleapis.com/css?family=Nanum+Pen+Script">
+    <link rel = "stylesheet" href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500&display=swap">
+    <script src="https://kit.fontawesome.com/d9282b7031.js" crossorigin="anonymous"></script>
+    <title>Words</title>
+</head>
+<body>
+ <header>
+   <nav id="navbar">
+     <a href = "#main" id = "skip">Skip to Main Content</a>
+        <ul class="container">
+            <li><a href = "index.html">Home/Life</a></li>
+            <li><a href = "life.html" class="current-page">Life</a></li>
+            <li><a href = "words.html">Words</a></li>
+        </ul>
+    </nav>
+    </header>
+    <main id = "main">
+        <button id="darkModeToggle">Toggle Dark Mode</button>
+
+        <script>
+              const btn = document.getElementById('darkModeToggle');
+              btn.addEventListener('click', function() {
+              document.body.classList.toggle('dark-mode');
+            });
+        </script>
+        <h1>Life</h1>
+        <h2>A gallery of glimpses into some of my favorite moments in my story so far</h2>
+        <div id="sour" class="paintings">
+                    <div>
+                        <img onclick=enlarge(this) src="images/girl_room_frame.png" alt="Julia's college room decorated with posters">
+                        <h2>My College Room</h2>
+                        <p>This is a picture of my newly decorated room in my college house. The light from the late afternoon sun hits the 
+                            the mirror on my vanity and glass holder creating sparkles of light that shift over my walls.
+                            My posters of all things film and art line my walls and remind me of my childhood dreams and of what
+                            life is really meant to consist of.
+                        </p>
+                    </div>
+            <div>
+                <img onclick=enlarge(this) src="images/cynthia_shells.png" alt="Julia's sister picking up seashells on the beach">
+                <h2>Twin Sister Soulmate</h2>
+                <p>I took this picture of my twin sister during our most recent trip to Spring Lake this summer. Being from New Jersey,
+                    I love the Jersey Shore a lot and it is one my favorite activities to do when I'm home during the summer. My sister is 
+                    my most favorite person in the entire world. She is my best friend and understands me better than anyone else. She's my soulmate 
+                    forever.
+                </p>
+            </div>
+            <div>
+                <img onclick=enlarge(this) src="images/greece_delphi.png" alt="Trees and ruins at the historic Delphi site outside of Athens">
+                <h2>Dream Wedding Destination</h2>
+                <p>At the end of 2019, my family and I went to Greece for winter break and visited the ancient city of Delphi where the mythical 
+                    Oracle of Delphi is said to be found. Many travelers from distant lands would trek hundreds of miles to visit the Oracle. As a 
+                    huge fan of Greek Mythology, visiting this ancient site felt surreal. More than that, no one ever told me how beautiful the ruins are alone.
+                    Amidst the soft tender grass and tumbled stones are small yellow flower with pale honey colored centers. Their abundance made the ruins look covered
+                    in yellow speckles and silvery olive trees also dot the land. Listening to the sond "In My Sheets" and "The Days that Are to Come" By John Vincent III, 
+                    it was the most perfect and euphoric experience like I was living inside a film. It would be an absolute dream to elope at this site in the future.
+                </p>
+            </div>
+            <div>
+                <img onclick=enlarge(this) src="images/spain_butterflies.png" alt="A butterfly banner hanging off the balcony of a stranger's apartment in Madrid">
+                <h2>Butterflies</h2>
+                <p>TLast winter break, I had just finished my first semester of college and had never felt more alone and melancholy in my entire life. I never knew how much 
+                    of an impact my twin sister and family had on my life and that once I was separated from them, learning to recoup was one of the most challenge experiences I have 
+                    ever faced. This was my first time reuniting with my family for an extended period of time and I was able to finally lift my head up from all the stress of first 
+                    semester and college life and appreciate the beauty beyond everything that takes place in the small town of Ann Arbor. A stranger's beautiful poster of colorful spain_butterflies
+                    was worth noting and celebrating.</p>
+            </div>
+            <div>
+                <img onclick=enlarge(this) src="images/flower_kitchen.png" alt="Two bouquets of flowers sitting in vases on a kitchen table">
+                <h2>Love and Flowers</h2>
+                <p>I used to never really see the value in buying flowers. I've always thought they were beautiful but I used to think about how the money
+                    spent purchasing flowers could be reallocated towards buying living plants that could survive for sustained periods of time. My mom used to buy
+                    flowers fairly often and I used to think that sometimes it was foolish to do so. This remark that I used to have in my mind is something I'm 
+                    not proud of and I wish I could have taken back everything I've ever said to my mother that would criticize these little indulgences she would take
+                    part in. Because now, when I have flowers in our college house it definitely makes me happy to see them and remark them for their silent but ever present
+                    beauty. The bouquet on the left was sent by roommate's father for his daughter's birthday and the other was given to me by a friend. Both I cherish so much 
+                    and I have so much appreciation now for the little things and enjoyments in life such as having a fresh bouquet of flowers on our kitchen table.
+                </p>
+            </div>
+            <div>
+                <img onclick=enlarge(this) src="images/shimi_biking.png" alt="Girl taking a picture of a sunset over rows of houses with a bike in the distance">
+                <h2>Nature and New Jersey</h2>
+                <p>One thing I shamelessly take so much pride in is being from New Jersey and celebrating all the wonderfully overlooked features and quirks this state has to offer. 
+                    When people think of New Jersey, nature is rarely the first thing that comes to mind for them but for me it is. I live in the central part of New Jersey where farms
+                and fields dot the town and the most incredible sunsets over take the sky in the warm summer evenings. Living in my house at home and being able to go biking with my sister 
+            after dinner and take walks around the park while listening to music outloud is one of my favorite activities in the entire world and I wish I could go back to it sometimes. </p>
+            </div>
+            </div>
+    </main>
+    <footer class = "icon-container"> 
+        <i class="fab fa-facebook"></i> 
+        <i class="fab fa-instagram"></i> 
+        <i class="fab fa-twitter"></i> 
+    </footer>
+</body>
+</html>

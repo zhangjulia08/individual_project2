@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/reset.css"> 
+    <link rel = "stylesheet" href = "css/style.css">
+    <link rel = "stylesheet" href = "https://fonts.googleapis.com/css?family=Nanum+Pen+Script">
+    <link rel = "stylesheet" href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500&display=swap">
+    <script src="https://kit.fontawesome.com/d9282b7031.js" crossorigin="anonymous"></script>
+    <title>Home/Life</title>
+</head>
+<body>
+ <header>
+   <nav id="navbar">
+     <a href = "#main" id = "skip">Skip to Main Content</a>
+        <ul class="container">
+            <li  id="home-pets"><a href = "index.html" class="current-page">Home</a></li>
+            <li><a href = "life.html">Life</a></li>
+            <li><a href = "words.html">Words</a></li>
+        </ul>
+    </nav>
+    </header>
+    <main id = "main">
+        <button id="darkModeToggle">Toggle Dark Mode</button>
+
+        <script>
+              const btn = document.getElementById('darkModeToggle');
+              btn.addEventListener('click', function() {
+              document.body.classList.toggle('dark-mode');
+            });
+        </script>
+        <div>
+            <h1>A Love Letter to My World</h1>
+                <div id="home-about">
+                    <div><img src = "images/julia_about_me_final.png" alt = "Julia looking over shoulder in library"></div>
+                <div><p>Hello hello! My name is Julia and welcome to my life. </p>
+                <p>I want my life to be my art and every moment to make me feel. I wouldn't be who I am today without the art or music. The indie folk 
+                    ballades and piano etudes. Or the Hope II painting by Gustav Klimt that hangs in the MoMa and the Art Nouveau posters by Alphonse Mucha that remind me that art is always intentional.</p>
+                <p>I want a gentle life -- filled with so much love and laughter. The sun and the ocean. A notes app full of half-written stories and painting ideas. I want to spend the day swimming, eating fruit, 
+                    reading and smiling in the sunlight -- go biking after dinner and feel inspired.</p>
+                <p>I want to take pictures of beautiful strangers and stay up late painting while listening to my new favorite song on repeat over and over again. I want to cry, laugh and scream and sing.
+                    I want to sing loudly and dance and fill my life with people who will hold my 
+                    hands and spin. </p>
+                <p>I want to write mediocre poetry and hopefully a novel. I want to be confident enough
+                    to read them out loud.</p>
+                <p>And most importantly of all, I want to love. </p>
+                <p>With all the love and joy the world has to offer, Julia </p>
+            </div>
+            </div>
+        </div>
+    </main>
+    <footer class = "icon-container"> 
+        <i class="fab fa-facebook"></i> 
+        <i class="fab fa-instagram"></i> 
+        <i class="fab fa-twitter"></i> 
+    </footer>
+</body>
+</html>
