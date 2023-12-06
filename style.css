@@ -1,0 +1,334 @@
+body {
+    background-color: #fdf6f2;
+    color: #2f3136;
+}
+h1 {
+    font-size: 50px;
+    font-family: 'Nanum Pen Script', Times, serif;
+    text-align: center;
+    padding: 20px;
+    background-color:#e58274;
+}
+
+h2 {
+    font-size: 20px;
+    font-family: 'Quicksand'; 
+    text-align: center;
+    padding: 20px;
+}
+
+p {
+    line-height: 25px;
+    padding: 20px;
+    margin-top: 20px;
+    text-align: center;
+    font-family: 'Quicksand'; 
+}
+
+#home-about img {
+    display: flex;
+  }
+
+.container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin:0px;
+    padding:0px;
+}
+
+nav{
+    background-color: #fdf6f2;
+    padding: 45px 0; 
+    text-align: center;
+    font-size:30px;
+    font-family: 'Nanum Pen Script', Times, serif;
+}
+
+nav a{
+    font-size: 35px;
+    margin: auto;
+    padding: 0px;
+    margin: 0px;
+    display:block;
+    border: solid 2px #e58274;
+}
+
+nav li:not(:last-child)::after {
+    content: none;
+}
+ol {
+    list-style-type: decimal;
+    margin-left: 50px;
+    padding: 10px;
+    line-height: 25px;
+    
+}
+nav a {
+    padding: 5px;
+    margin: 20px;
+}
+
+a {
+    text-align: underline;
+}
+
+#skip {
+    text-transform: uppercase;
+    position: absolute;
+    left: -500px;
+}
+
+
+
+#skip:focus {
+    left: 100px;
+    top: 10px;
+    border: solid 2px blue;
+    font-size: 20px;
+}
+
+*:focus{
+    border: solid 2px blue;
+}
+
+.thumbnail {
+    border-radius: 30px;
+}
+
+.current-page {
+    text-decoration:underline;
+    border: solid 2px #e58274;
+}
+ 
+ul {
+    margin-left: 50px;
+    list-style-type: none;
+}
+
+nav li:not(:last-child)::after {
+    content: none;
+}
+
+.icon-container {
+    display: flex;
+    justify-content: center; 
+}
+
+i {
+    font-size: 48px;
+    padding: 20px;
+  }
+
+.footer {
+    margin: 70px;
+    padding: 30px;
+}
+
+img {
+    width: 70%;
+    margin: auto;
+}
+
+img:hover {
+    transform: scale(1.02);
+    transition: transform 0.3s ease;
+}
+
+.call-me-by-your-name img {
+    width: 60%;
+    display: flex;
+}
+
+#call_Logo {
+    width: 30%;
+    display: flex;
+    padding:30px;
+}
+
+#call_poster {
+    width:500px;
+}
+
+#call_title {
+    font-family: 'Nanum Pen Script', Times, serif;
+    font-size: 40px;
+}
+.paintings img {
+    width: 100%;
+    margin: 0 auto;
+    }
+    
+    .paintings {
+    display: grid;
+    grid-template-columns: 1fr;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin: 0 auto;
+    }
+    
+    #home-paintings img:first-child, #artists img:first-child {
+    transform: rotate(0deg);
+    }
+    
+    .paintings img {
+    transition: transform .2s;
+    }
+    
+    .paintings img:hover, .paintings img:focus, #home-paintings img:first-child:hover, #home-paintings img:first-child:focus, #artists img:first-child:focus, #artists img:first-child:hover {
+    transform: scale(1.1);
+    z-index: 1;
+    }   
+
+.dark-mode #navbar {
+    background-color: black;
+    color: white;
+    }
+    
+.dark-mode {
+    background-color: black;
+    color: white;
+}
+
+@media screen and (min-width: 800px) {
+    .paintings {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        }
+
+ /* flip card css */
+ .flip-card {
+    background-color: transparent;
+    padding: 20px;
+    height: 700px;
+    perspective: 1000px; 
+  }
+  
+
+  .flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+  }
+  
+ 
+  .flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+  }
+  
+
+  .flip-card-front, .flip-card-back {
+    position: absolute;
+    width: 100%;
+    /* height: 100%; */
+    -webkit-backface-visibility: hidden; 
+    backface-visibility: hidden;
+  }
+  
+  
+  .flip-card-front {
+    background-color: transparent;
+    color: #e58274;
+  }
+  
+ 
+  .flip-card-back {
+    background-color: #fdf6f2;
+    color: #2f3136;
+    transform: rotateY(180deg);
+    overflow: scroll;
+    padding: 10px;
+  }
+  .flip-card-back > h1 {
+    font-size: 30px;
+  }
+  .flip-card-back > p {
+    font-size: 20px;
+  }
+}
+@media screen and (min-width: 1000px) {
+    #home-about {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+    
+    #home-about div:nth-child(2) {
+        padding-left: 30px;
+    }
+    
+    #home-about img {
+        width: 100%;
+        display: flex;
+      }
+
+    nav a {
+        border: none;
+        font-size: 25px;
+    }
+
+    .paintings {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        margin: 0 auto;
+        }
+    
+ /* flip card css */
+ .flip-card {
+    background-color: transparent;
+    height: 700px;
+    perspective: 1000px;  
+  }
+  
+
+  .flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+  }
+  
+ 
+  .flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+  }
+  
+
+  .flip-card-front, .flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden; 
+    backface-visibility: hidden;
+  }
+  
+  
+  .flip-card-front {
+    background-color: transparent;
+    color: #e58274;
+  }
+  
+ 
+  .flip-card-back {
+    background-color: #fdf6f2;
+    color: #2f3136;
+    transform: rotateY(180deg);
+    overflow: scroll;
+    padding: 10px;
+  }
+  .flip-card-back > h1 {
+    font-size: 30px;
+  }
+  .flip-card-back > p {
+    font-size: 20px;
+  }
+}
